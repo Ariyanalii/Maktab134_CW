@@ -9,11 +9,9 @@ class SchoolStaff:
         if grade < 0 or grade >= 20:
             raise ValueError("invalid grade")
         return f"{student_name}: {grade}"
-    
+
     def __str__(self):
         return f"Name: {self.name} | Role: {self.role} "
-
-
 
 
 class Student:
@@ -28,6 +26,4 @@ teach1 = SchoolStaff("nameee", "admin")
 stud1 = Student("ariyan", 15)
 
 print(teach1.set_grade("ariyan", 15))
-
-
 print(teach1.role)
