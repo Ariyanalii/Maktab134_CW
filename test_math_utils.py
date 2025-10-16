@@ -23,3 +23,5 @@ def test_divide_z():
 def test_is_even():
     assert math_utils.is_even(8)
 
+def test_is_even():
+    assert math_utils.is_even(0)
