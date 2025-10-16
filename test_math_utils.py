@@ -13,7 +13,7 @@ def test_add_neg():
     assert math_utils.add(-20, -50) == -70
 
 def test_divide_n():
-    assert math_utils.divide(0, 3) == 3
+    assert math_utils.divide(0, 3) == 0
 
 def test_divide_z():
     with pytest.raises(ZeroDivisionError):
@@ -22,6 +22,9 @@ def test_divide_z():
 
 def test_is_even():
     assert math_utils.is_even(8)
+
+def test_is_even():
+    assert math_utils.is_even(7)
 
 def test_is_even():
     assert math_utils.is_even(0)
