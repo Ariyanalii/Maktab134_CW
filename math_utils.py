@@ -12,9 +12,6 @@ class MathUtils:
     
     def is_even(self, n):
 
-        if n == 0:
-            raise ZeroDivisionError("Cannot Divide By Zero.")
-
         return n % 2 == 0
 
 
